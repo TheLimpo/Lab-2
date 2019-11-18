@@ -20,7 +20,7 @@ int main()
 
 	for (int i = 0; i < 5; i++)
 	{
-		cout << "Enter a number you want in your 5 length array: " << endl;
+		cout << "Enter a number you want in your 5 length array: ";
 		cin >> arr[i];
 	}
 
