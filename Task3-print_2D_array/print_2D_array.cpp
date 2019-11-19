@@ -27,8 +27,7 @@ void array_rows_cols(int **arr, int rows, int columns)
 	{
 		for (int i = 0; i < rows; i++)
 		{
-			colsum = colsum + arr[i][j];
-			
+			colsum = colsum + arr[i][j];	
 		}
 
 		total = total + colsum;
@@ -38,8 +37,6 @@ void array_rows_cols(int **arr, int rows, int columns)
 	}
 	cout << total << endl;
 }
-
-
 
 
 
@@ -54,12 +51,10 @@ int main()
 
 	cout << "Enter number of rows in your array: ";
 	cin >> rows;
-	//int* rowptr = &rows;
 
 	cout << "Enter number of columns in your array: ";
 	cin >> columns;
-	//int* colptr = &columns;
-
+	
 	//Create the 2D array
 	int **arr = new int*[rows];
 	for (int i = 0; i < rows; i++)
