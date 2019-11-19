@@ -7,24 +7,19 @@ using namespace std;
 void array_rows_cols(int **arr, int rows, int columns)
 {
 	int colsum = 0, rowsum = 0, total = 0;
-	//int* rowptr;
-	//int* colptr;
+	
 	
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < columns; j++)
 		{
 			cout << arr[i][j] << "\t";
-			rowsum = rowsum + arr[i][j];
-			total = total + rowsum;
-			
+			rowsum = rowsum + arr[i][j];	
 		}
-		cout << rowsum;
-		cout << endl;
-		
+
+		total = total + rowsum;
+		cout << rowsum << endl;
 		rowsum = 0;
-		
-	
 	}
 	
 
@@ -33,17 +28,15 @@ void array_rows_cols(int **arr, int rows, int columns)
 		for (int i = 0; i < rows; i++)
 		{
 			colsum = colsum + arr[i][j];
-			total = total + colsum;
+			
 		}
+
+		total = total + colsum;
 		cout << colsum << "\t";
 		colsum = 0;
 		
 	}
-	cout << total;
-
-
-	
-		
+	cout << total << endl;
 }
 
 
