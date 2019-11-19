@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task3-print_2D_array", "Tas
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task4-Swap_sort", "Task4-Swap_sort\Task4-Swap_sort.vcxproj", "{737EE89A-00EE-43F6-84A1-3B511FCB85FB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 5-Shrink", "Task 5-Shrink\Task 5-Shrink.vcxproj", "{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{737EE89A-00EE-43F6-84A1-3B511FCB85FB}.Release|x64.Build.0 = Release|x64
 		{737EE89A-00EE-43F6-84A1-3B511FCB85FB}.Release|x86.ActiveCfg = Release|Win32
 		{737EE89A-00EE-43F6-84A1-3B511FCB85FB}.Release|x86.Build.0 = Release|Win32
+		{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}.Debug|x64.ActiveCfg = Debug|x64
+		{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}.Debug|x64.Build.0 = Debug|x64
+		{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}.Debug|x86.ActiveCfg = Debug|Win32
+		{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}.Debug|x86.Build.0 = Debug|Win32
+		{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}.Release|x64.ActiveCfg = Release|x64
+		{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}.Release|x64.Build.0 = Release|x64
+		{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}.Release|x86.ActiveCfg = Release|Win32
+		{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

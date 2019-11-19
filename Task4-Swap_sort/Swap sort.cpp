@@ -71,6 +71,7 @@ int main()
 	int a, b, c;
 	bool order;
 
+	//run till 0 is given in a
 	while (true)
 	{
 		cout << "Give a (0 to quit): ";
@@ -89,6 +90,7 @@ int main()
 		cout << "Sort ascending/descending(1/0): ";
 		cin >> order;
 
+		//call function
 		swap_sort(a, b, c, order);
 
 		cout << "Result: " << a <<  ", " << b << ", " << c << endl;
