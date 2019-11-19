@@ -6,25 +6,42 @@ using namespace std;
 
 void array_rows_cols(int **arr, int rows, int columns)
 {
-	int colsum = 0, rowsum = 0;
+	int colsum = 0, rowsum = 0, total = 0;
+	//int* rowptr;
+	//int* colptr;
 	
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < columns; j++)
 		{
-			cout << arr[i][j] << " ";
+			cout << arr[i][j] << "\t";
 			rowsum = rowsum + arr[i][j];
-			colsum = colsum + arr[j][i];
+			total = total + rowsum;
 			
 		}
 		cout << rowsum;
 		cout << endl;
 		
 		rowsum = 0;
-		colsum = 0;
+		
 	
 	}
 	
+
+	for (int j = 0; j < columns; j++)
+	{
+		for (int i = 0; i < rows; i++)
+		{
+			colsum = colsum + arr[i][j];
+			total = total + colsum;
+		}
+		cout << colsum << "\t";
+		colsum = 0;
+		
+	}
+	cout << total;
+
+
 	
 		
 }
@@ -44,9 +61,11 @@ int main()
 
 	cout << "Enter number of rows in your array: ";
 	cin >> rows;
+	//int* rowptr = &rows;
 
 	cout << "Enter number of columns in your array: ";
 	cin >> columns;
+	//int* colptr = &columns;
 
 	//Create the 2D array
 	int **arr = new int*[rows];
