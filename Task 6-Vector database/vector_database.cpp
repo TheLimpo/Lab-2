@@ -1,6 +1,5 @@
 #include <iostream>
 #include<vector>
-//#include <algorithm>
 #include <string>
 
 using namespace std;
@@ -17,6 +16,7 @@ void vector_database()
 
 	while (true)
 	{
+		//Menu
 		cout << "MENU:" << endl;
 		cout << "1. Initialise database" << endl << "2. Insert" << endl << "3. Search" << endl;
 		cout << "4. Delete" << endl << "5. Print" << endl << "6. Quit" << endl << endl;
@@ -28,95 +28,98 @@ void vector_database()
 		switch (choise)
 		{
 
-		case '1':
-		{
-			string str;
-			cout << "Are you sure?(yes/no): ";
-			cin >> str;
-
-			if (str == "yes" || str == "Yes")
+			case '1': //clears the vector
 			{
-				v.clear();
-				cout << "Vector initialised" << endl;
+				string str;
+				cout << "Are you sure?(yes/no): ";
+				cin >> str;
+
+				if (str == "yes" || str == "Yes")
+				{
+					v.clear();
+					cout << "Vector initialised" << endl;
+					cout << endl;
+					break;
+				}
+				cout << "Vector NOT initialised" << endl;
+				cout << endl;
+				break;
+
+			}
+
+			case '2': //insert names in the vector
+			{
+				string str;
+				while (str != "Q" && str != "q")
+				{
+					cout << "Insert a name (Q to quit): ";
+					cin >> str;
+
+					if (str != "Q" && str != "q")
+					{
+						v.push_back(str);
+					}
+					
+				}
 				cout << endl;
 				break;
 			}
-			cout << "Vector NOT initialised" << endl;
-			break;
 
-		}
-
-		case '2':
-		{
-			string str;
-			while (str != "Q" && str != "q")
+			case '3': //search the vector for names beginning with
 			{
-				cout << "Insert a name (Q to quit): ";
+				string str;
+				cout << "What name do you want to search?: ";
 				cin >> str;
+				int len = str.length();
 
-				if (str != "Q" && str != "q")
+				for (int i = 0; i < v.size(); i++)
 				{
-					v.push_back(str);
+					if (str == v[i].substr(0,len))
+					{
+						cout << v[i] << endl;
+					}
 				}
 				cout << endl;
+				break;
 			}
-			break;
-		}
 
-		case '3': //not done
-		{
-			string substr;
-			cout << "What name do you want to search?: ";
-			cin >> substr;
-
-			for (int i = 0; i < v.size(); i++)
+			case '4': //delete single names
 			{
-				if (substr == v[i])
+				string str;
+				cout << "What name do you want to delete?: ";
+				cin >> str;
+
+				for (int i = 0; i < v.size(); i++)
+				{
+					if (v[i] == str)
+					{
+						v.erase(v.begin() + i);
+						break;
+					}
+
+				}
+				cout << endl;
+				break;
+			}
+
+			case '5': //prints the names in the vector
+			{
+				for (int i = 0; i < v.size(); i++)
 				{
 					cout << v[i] << endl;
 				}
+				cout << endl;
+				break;
 			}
 
-			break;
-		}
-
-		case '4':
-		{
-			string str;
-			cout << "What name do you want to delete?: ";
-			cin >> str;
-
-			for (int i = 0; i < v.size(); i++)
+			case '6': //ends program
 			{
-				if (v[i] == str)
-				{
-					v.erase(v.begin() + i);
-					break;
-				}
-
+				cout << "Goodbye!" << endl;
+				goto exit_loop;
 			}
-			cout << endl;
-			break;
-		}
 
-		case '5':
-		{
-			for (int i = 0; i < v.size(); i++)
-			{
-				cout << v[i] << endl;
-			}
-			cout << endl;
-			break;
-		}
-
-		case '6':
-		{
-			cout << "Goodbye!" << endl;
-			goto exit_loop;
-		}
-
-		default:
-			cout << "Not allowed, choose a number 1-6" << endl;
+			default:
+				cout << "Not allowed, choose a number 1-6" << endl;
 		}
 
 	}

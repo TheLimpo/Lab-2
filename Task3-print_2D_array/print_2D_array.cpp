@@ -55,7 +55,7 @@ int main()
 	cout << "Enter number of columns in your array: ";
 	cin >> columns;
 	
-	//Create the 2D array
+	//Create the 2D array with dynamic memory
 	int **arr = new int*[rows];
 	for (int i = 0; i < rows; i++)
 	{
