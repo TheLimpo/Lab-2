@@ -15,7 +15,7 @@ void shrink_array(int arr[],int n)
 		
 	}
 
-	//rearrange so the 0s comes at last
+	//rearrange so the 0s comes last
 	for (int i = 0; i < n-1; i++)
 	{
 		for (int j = 0; j < n - 1; j++)
@@ -52,7 +52,7 @@ int main()
 	//Call function
 	shrink_array(arr,n);
 
-	//print array after "shrinkage
+	//print array after "shrinkage"
 	cout << "output array: ";
 	for (int i = 0; i < n; i++)
 	{
