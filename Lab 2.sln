@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29509.3
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task1-SortCheck", "Task1-SortCheck\Task1-SortCheck.vcxproj", "{50E264B0-0DA7-4F0A-BD1C-A43351569BCF}"
 EndProject
@@ -11,9 +11,15 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task3-print_2D_array", "Tas
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task4-Swap_sort", "Task4-Swap_sort\Task4-Swap_sort.vcxproj", "{737EE89A-00EE-43F6-84A1-3B511FCB85FB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 5-Shrink", "Task 5-Shrink\Task 5-Shrink.vcxproj", "{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task5-Shrink", "Task 5-Shrink\Task 5-Shrink.vcxproj", "{81F03D7E-0A99-4424-AA36-CAE2028BCAC2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task 6-Vector database", "Task 6-Vector database\Task 6-Vector database.vcxproj", "{2D9B782C-7F21-46AE-9B1F-EAE6A56E259D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task6-Vector database", "Task 6-Vector database\Task 6-Vector database.vcxproj", "{2D9B782C-7F21-46AE-9B1F-EAE6A56E259D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab2lib", "lab2lib\lab2lib.vcxproj", "{CF8EEBEE-17EF-4421-AE2A-447055E194FD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task7.2", "Task7.2\Task7.2.vcxproj", "{25CE3AC2-90A3-4020-9AD6-255A17238ED2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task8-reflections", "Task8-reflections\Task8-reflections.vcxproj", "{E1604D63-01C6-4BB1-8B29-A3613F23F6FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +77,30 @@ Global
 		{2D9B782C-7F21-46AE-9B1F-EAE6A56E259D}.Release|x64.Build.0 = Release|x64
 		{2D9B782C-7F21-46AE-9B1F-EAE6A56E259D}.Release|x86.ActiveCfg = Release|Win32
 		{2D9B782C-7F21-46AE-9B1F-EAE6A56E259D}.Release|x86.Build.0 = Release|Win32
+		{CF8EEBEE-17EF-4421-AE2A-447055E194FD}.Debug|x64.ActiveCfg = Debug|x64
+		{CF8EEBEE-17EF-4421-AE2A-447055E194FD}.Debug|x64.Build.0 = Debug|x64
+		{CF8EEBEE-17EF-4421-AE2A-447055E194FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{CF8EEBEE-17EF-4421-AE2A-447055E194FD}.Debug|x86.Build.0 = Debug|Win32
+		{CF8EEBEE-17EF-4421-AE2A-447055E194FD}.Release|x64.ActiveCfg = Release|x64
+		{CF8EEBEE-17EF-4421-AE2A-447055E194FD}.Release|x64.Build.0 = Release|x64
+		{CF8EEBEE-17EF-4421-AE2A-447055E194FD}.Release|x86.ActiveCfg = Release|Win32
+		{CF8EEBEE-17EF-4421-AE2A-447055E194FD}.Release|x86.Build.0 = Release|Win32
+		{25CE3AC2-90A3-4020-9AD6-255A17238ED2}.Debug|x64.ActiveCfg = Debug|x64
+		{25CE3AC2-90A3-4020-9AD6-255A17238ED2}.Debug|x64.Build.0 = Debug|x64
+		{25CE3AC2-90A3-4020-9AD6-255A17238ED2}.Debug|x86.ActiveCfg = Debug|Win32
+		{25CE3AC2-90A3-4020-9AD6-255A17238ED2}.Debug|x86.Build.0 = Debug|Win32
+		{25CE3AC2-90A3-4020-9AD6-255A17238ED2}.Release|x64.ActiveCfg = Release|x64
+		{25CE3AC2-90A3-4020-9AD6-255A17238ED2}.Release|x64.Build.0 = Release|x64
+		{25CE3AC2-90A3-4020-9AD6-255A17238ED2}.Release|x86.ActiveCfg = Release|Win32
+		{25CE3AC2-90A3-4020-9AD6-255A17238ED2}.Release|x86.Build.0 = Release|Win32
+		{E1604D63-01C6-4BB1-8B29-A3613F23F6FA}.Debug|x64.ActiveCfg = Debug|x64
+		{E1604D63-01C6-4BB1-8B29-A3613F23F6FA}.Debug|x64.Build.0 = Debug|x64
+		{E1604D63-01C6-4BB1-8B29-A3613F23F6FA}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1604D63-01C6-4BB1-8B29-A3613F23F6FA}.Debug|x86.Build.0 = Debug|Win32
+		{E1604D63-01C6-4BB1-8B29-A3613F23F6FA}.Release|x64.ActiveCfg = Release|x64
+		{E1604D63-01C6-4BB1-8B29-A3613F23F6FA}.Release|x64.Build.0 = Release|x64
+		{E1604D63-01C6-4BB1-8B29-A3613F23F6FA}.Release|x86.ActiveCfg = Release|Win32
+		{E1604D63-01C6-4BB1-8B29-A3613F23F6FA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

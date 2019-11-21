@@ -1,0 +1,18 @@
+1. I learned alot. This Lab2 was harder than lab1 by alot.
+Especially to print a 2d array with user input. Lots of googling. Everything took more time.
+
+2. But for me this lab 2 instructions was in some cases very weird. 
+It's hard to know exactly what you guys wanted cuz alot of the tasks was open for interpetations.
+Example:
+In alot of tasks it said that a function should take an int array as a parameter.
+or something similar.
+And that made it seem like the function ONLY took that parameter. 
+But I couldn't for love of me find a way to some of the functions to ONLY take one parameter.
+So I had to make the functions take more parameters. Other people did the same.
+So if you want a specific number of parameters or not. It may be better to write that.
+Atleast make it clear that it doesn't take only one parameter. 
+
+Task 7 in some cases doesn't make sense. What to copy and not and so on. 
+Linking was not a problem for me. 
+
+3. Time: This lab took more time. Maybe like 25 hours.
