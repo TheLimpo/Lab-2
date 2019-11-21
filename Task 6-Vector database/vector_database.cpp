@@ -63,7 +63,7 @@ void vector_database()
 			break;
 		}
 
-		case '3':
+		case '3': //not done
 		{
 			string substr;
 			cout << "What name do you want to search?: ";
